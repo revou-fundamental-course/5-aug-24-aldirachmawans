@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kalkulator BMI</title>
     <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
@@ -21,29 +21,29 @@
             <form>
                 <div>
                     <h3>Jenis Kelamin</h3>
-                    <input type="radio" id="laki-laki" name="jenis-kelamin">
-                        <label for="jenis-kelamin" value="laki-laki">Laki - laki</label>
-                    <input type="radio" id="perempuan" name="jenis-kelamin">
-                        <label for="jenis-kelamin" value="perempuan">Perempuan</label>
+                    <input type="radio" id="laki-laki" name="jenis-kelamin" value="laki-laki">
+                        <label for="laki-laki">Laki - laki</label>
+                    <input type="radio" id="perempuan" name="jenis-kelamin" value="perempuan">
+                        <label for="perempuan">Perempuan</label>
                 </div>
     
                 <div>
                     <h3>Berat badan</h3>
-                    <input type="number" name="" id="">
+                    <input type="number" id="input-weight">
                 </div>
     
                 <div>
                     <h3>Usia (tahun)</h3>
-                    <input type="number" name="" id="">
+                    <input type="number">
                 </div>
     
                 <div>
                     <h3>Tinggi badan</h3>
-                    <input type="number" name="" id="">
+                    <input type="number" id="input-height">
                 </div>
     
                 <div>
-                    <button class="button bg-cornsilk">Hitung BMI</button>
+                    <button class="button bg-aqua" type="button" onClick="formValidate()">Hitung BMI</button>
                     <button class="button bg-reset">Reset</button>
                 </div>
             </form>
@@ -62,11 +62,60 @@
         
         <aside>
             <section>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum obcaecati eum distinctio consectetur? Temporibus reprehenderit nulla quam consequatur pariatur velit aperiam corrupti iusto mollitia, eligendi ut quidem quo eveniet ipsam provident distinctio qui tempore, natus hic? Iure sapiente asperiores iste!</p>
+                <h1>Hasil</h1>
+                
+                <article class="hasil">
+                    <h3>Berat Badan Lebih</h3>
+                    <h4>24.7</h4>
+                    <p>Anda memiliki berat badan berlebih</p>
+                        <div>
+                            <button class="button bg-aqua">Download Hasil BMI</button>
+                        </div>
+                </article>
+
+                <div>
+                    <p>Hasil BMI diantara 23 dan 25</p>
+                    <p>Anda berada dalam kategori overweight atau berat badan berlebih.</p>
+                    <p>Cara terbaik untuk menurunkan berat badan adalah dengan mengatur kalor makanan yang dikonsumsi dan berolahraga.</p>
+                </div>
+
+                <div class="regist">
+                    <button class="button bg-aqua">Konsultasi Ahli Gizi Via Aplikasi</button>
+                    <button class="button bg-aqua">Registrasi Online Ahli Gizi</button>
+                </div>
+
+                <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang, Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran anda terkait dengan berat badan Anda.</p>
+
+                <article class="information">
+                    <div>
+                        <h3>Beberapa penyakit yang berasal dari kegemukan</h3>
+                        <p>Diabetes</p>
+                        <p>Hipertensi</p>
+                        <p>Sakit Jantung</p>
+                        <p>Osteoarthritis</p>
+                    </div>
+                    <div>
+                        <button class="button bg-aqua">Konsultasi Dokter Via Aplikasi</button>
+                        <button class="button bg-aqua">Registrasi Online Sekarang</button>
+                    </div>
+                </article>
+
+                <div>
+                    <div class="download-apk">
+                        <p>Download Aplikasi</p>
+                    </div>
+                    <div class="logo">
+                        <img src="assets\playstore.png" alt="Girl in a jacket">
+                        <img src="assets\appstore.png" alt="Girl in a jacket">
+                    </div>
+                </div>
             </section>
         </aside>
     </main>
 
     <footer>Made by Aldi R</footer>
+
+    <script src="js\script.js"></script>
 </body>
+
 </html>

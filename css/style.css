@@ -10,9 +10,11 @@ main {
     display: flex;
 }
 
+
+/* Aside 1 */
 form {
     padding: 12px;
-    background-color: aliceblue;
+    background-color: rgb(241, 243, 244);
 }
 
 aside {
@@ -25,17 +27,18 @@ aside {
     border-radius: 4px;
 }
 
-.bg-cornsilk {
-    background-color: cornsilk;
+.bg-aqua {
+    background-color: rgb(26, 122, 192);
+    color: white;
 }
 
 .bg-reset {
-    background-color: red;
+    background-color: rgb(58, 60, 60);
     color: white;
 }
 
 input[type=number] {
-    width: 100%;
+    width: 75%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -46,6 +49,60 @@ input[type=number] {
     font-size: 14px;
   }
 
-  footer {
+
+  /* Aside 2 */
+.hasil {
+    text-align: center;
+    padding: 12px;
+    background-color: rgb(241, 243, 244); 
+  }
+
+h4 {
+    font-size: xxx-large;
+  }
+
+.information {
+    text-align: center;
+    padding: 12px;
+    background-color: rgb(241, 243, 244); 
+  }
+
+.download-apk {
+    padding-top: 10px;
     text-align: center;
   }
+  
+.logo {
+    display: flex;
+    justify-content: center;
+}
+  
+img {
+    width: 200px;
+    height: 70px;
+  }
+  /* Footer */
+footer {
+    text-align: center;
+    font-family: cursive;
+  }
+
+
+  /* Responsive */
+@media only screen and (max-width: 480px) {
+    main {
+        flex-direction: column;
+    }
+
+    .regist {
+        display: flex;
+    }
+
+    .button {
+        margin-bottom: 10px;
+    }
+
+    .bg-aqua {
+        margin: 5px;
+    }
+}
